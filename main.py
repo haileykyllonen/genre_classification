@@ -17,9 +17,9 @@ def go(config: DictConfig):
 
     # Check which steps we need to execute
     if isinstance(config["main"]["execute_steps"], str):
-    steps_to_execute = config["main"]["execute_steps"].split(",")
-else:
-    steps_to_execute = list(config["main"]["execute_steps"])
+        steps_to_execute = config["main"]["execute_steps"].split(",")
+    else:
+        steps_to_execute = list(config["main"]["execute_steps"])
 
 
     # Download step
